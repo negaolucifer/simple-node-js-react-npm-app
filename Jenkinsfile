@@ -9,7 +9,7 @@ pipeline {
         CI = 'true'
     }
     stages {
-         stage('Build') {
+        stage('Build') {
             steps {
                 sh 'npm install'
             }
@@ -19,5 +19,5 @@ pipeline {
                 sh './jenkins/scripts/test.sh'
             }
         }
-   }
+    }
 }
